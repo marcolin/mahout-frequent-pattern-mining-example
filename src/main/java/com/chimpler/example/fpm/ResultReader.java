@@ -84,10 +84,11 @@ public class ResultReader {
 						}
 						String firstItem = itemById.get(Integer.parseInt(firstItemId));
 						listWithoutFirstItem.remove(firstItemId);
+					
 						System.out.printf(
 							"%s => %s: supp=%.3f, conf=%.3f",
-							listWithoutFirstItem,
 							firstItem,
+							listWithoutFirstItem,
 							support,
 							confidence);
 
